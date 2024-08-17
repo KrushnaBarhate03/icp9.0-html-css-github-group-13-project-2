@@ -1,10 +1,35 @@
 .main{
 }
 
+.blog-container{
+    height: 500px;
+    width: 390px;
+    border-style: solid;
+    margin-top: 200px;
+    margin-left: 100px;
+    border-width: 2px;
+    border-color: #3B3F54;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.blog-container:hover{
+    background-color: #9398b2;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .fullstack-img{
 height: 220px;
-width: 340px;
-margin-top: 200px;
-border-radius: 20px 20px 0px 0px; 
-margin-left: 85px; 
+width: 390px;
+margin-top: px;
+}
+
+.blog-title{
+    color:black;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
 }
