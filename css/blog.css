@@ -1,15 +1,21 @@
-.main{
+
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
 }
 
+
 .blog-container{
-    height: 535px;
-    width: 380px;
-    border-style: solid;
+    height: 590px;
+    width: 390px;
     margin-top: 200px;
-    margin-left: 100px;
     border-width: 2px;
     border-color: #3B3F54;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     transition: all ease-in-out 0.5s;
 }
@@ -44,9 +50,6 @@ margin-top: px;
     font-size: 28px;
     margin-bottom: 10px;
     font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: #3B3F54;
-    text-decoration-thickness: 2px;
     margin-top: 5px;
     text-align: center;
 }
@@ -65,7 +68,6 @@ margin-top: px;
     font-size: 20px;
     margin-top: 10px;
     padding-left: 123px;
-    
 }
 
 .read-1:hover{
@@ -73,6 +75,71 @@ margin-top: px;
     transition: color 0.3s;
     cursor: pointer;
     text-decoration: underline;
-
-
 }
+
+
+
+.blog-container:hover{
+    background-color: lightgray;
+    transition: background-color 0.3s;
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    width: 25;
+    align-items: center;
+    transition: 0.3s;
+}
+
+
+.datascience-img{
+height: 220px;
+width: 390px;
+margin-top: px;
+}
+
+.blog-title{
+    color:black;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.blog-content{
+    color: gray;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.read-1{
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-left: 123px;
+}
+
+.read-1:hover{
+    color: blueviolet;
+    transition: color 0.3s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.devops-img{
+    height: 220px;
+    width: 390px;
+    margin-top: px;
+    }
+
+.data-analytices-img{
+        height: 220px;
+        width: 390px;
+        margin-top: px;
+        }
+    
+
+
