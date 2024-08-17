@@ -2,8 +2,8 @@
 }
 
 .blog-container{
-    height: 500px;
-    width: 390px;
+    height: 535px;
+    width: 380px;
     border-style: solid;
     margin-top: 200px;
     margin-left: 100px;
@@ -18,11 +18,12 @@
     background-color: lightgray;
     transition: background-color 0.3s;
     transition: 0.3s;
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.5);
-    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
     width: 25;
+    align-items: center;
     transition: 0.3s;
 }
+
 
 .fullstack-img{
 height: 220px;
@@ -57,4 +58,21 @@ margin-top: px;
     text-align: justify;
     line-height: 25px;
     margin-bottom: 50px;
+}
+
+.read-1{
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-left: 123px;
+    
+}
+
+.read-1:hover{
+    color: blueviolet;
+    transition: color 0.3s;
+    cursor: pointer;
+    text-decoration: underline;
+
+
 }
