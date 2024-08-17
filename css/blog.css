@@ -33,3 +33,17 @@ margin-top: px;
     text-align: center;
     font-weight: bold;
 }
+
+.blog-title-info{
+    color:black;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #3B3F54;
+    text-decoration-thickness: 2px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
