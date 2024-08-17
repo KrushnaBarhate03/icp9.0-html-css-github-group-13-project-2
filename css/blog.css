@@ -11,13 +11,17 @@
     border-color: #3B3F54;
     border-radius: 20px;
     padding: 20px;
+    transition: all ease-in-out 0.5s;
 }
 
 .blog-container:hover{
-    background-color: #9398b2;
-    color: white;
-    transition: 0.5s;
+    background-color: lightgray;
+    transition: background-color 0.3s;
+    transition: 0.3s;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.5);
     cursor: pointer;
+    width: 25;
+    transition: 0.3s;
 }
 
 .fullstack-img{
@@ -46,4 +50,11 @@ margin-top: px;
     text-align: center;
 }
 
-
+.blog-content{
+    color: gray;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 50px;
+}

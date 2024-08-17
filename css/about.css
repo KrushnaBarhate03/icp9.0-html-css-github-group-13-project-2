@@ -11,6 +11,7 @@ body{
     margin-left: 40px;
  margin-right:40px;
 }
+
 .img{
     margin-left: 40px;
     margin-right: 40px;
@@ -20,6 +21,7 @@ body{
     border-radius: 30px;
     border: solid 5px black;
 }
+
 .header-description-container{
     display: flex;
     flex-direction: row;
