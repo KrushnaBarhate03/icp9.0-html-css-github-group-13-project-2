@@ -1,0 +1,39 @@
+.devops-head{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+}
+
+.p1{
+    color: black;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    pa
+}
+
+.devops-list{
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 120px;
+    color: black;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.dev-col{
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px
+    padding-left: 10px;
+    font-weight: bold;
+}
