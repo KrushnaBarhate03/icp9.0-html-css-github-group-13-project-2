@@ -1,0 +1,42 @@
+.head{
+    
+    text-align: center;
+    color:blueviolet;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.content{
+    text-align: justify;
+    font-size: 18px;
+    padding-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 25px;
+    margin-bottom: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+.syallbus{
+    color: black;
+    font-size: 15px;
+    margin-top: 50px;
+    padding-left: 85px;
+    text-decoration: underline;
+    text-decoration-color: darkblue;
+}
+
+.head-2{
+    color: black;
+    font-size: 30px;
+    margin-top: 50px;
+    padding-left: 75px;
+    font-weight: bold;
+}
+
+.h1{
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
