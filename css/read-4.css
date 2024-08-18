@@ -1,0 +1,32 @@
+.data-a{
+    
+    text-align: center;
+    color:rgb(130, 89, 169);
+    margin-top: 20px;
+    font-size: 31px;
+}
+
+.dta-a{
+    color: black;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.dtalist{
+    list-style-type: none;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.dta-col{
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px
+    padding-left: 10px;
+    font-weight: bold;
+}
+}
