@@ -1,0 +1,26 @@
+.head-py{
+    text-align: center;
+    font-weight: 45px;
+    padding-top: 25px;
+}
+
+.content{
+    text-align: justify;
+    font-size: 18px;
+    padding-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 25px;
+    margin-bottom: 50px;
+    color: black;
+    font-weight: bold;
+    padding-left: 25PX;
+}
+
+.py-col{
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    padding-right: 25px;
+}
