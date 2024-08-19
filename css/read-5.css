@@ -1,0 +1,30 @@
+.soft-head{
+    background-color: #f7f7f7;
+    padding: 10px;
+    text-align: center;
+    color:blue;
+    margin-top: 20px;
+    font-size: 45px;
+}
+
+.soft-content{
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 50px;    
+}
+
+.soft{
+    
+    padding-left: 25px;
+}
+
+.soft-col{
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
