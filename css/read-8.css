@@ -1,0 +1,39 @@
+.j-head{
+     
+    text-align: center;
+    color:blueviolet;
+    margin-top: 20px;
+    font-size: 55px;
+}
+
+.j-con{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 18px;
+    padding-left: 15px;
+
+}
+
+.java-t{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 25px
+}
+
+.j-content{
+    color: black;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.j-col{
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    padding-right: 25px;
+}
