@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="./../css/read-6.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/nav.css">
+    <link rel="stylesheet" href="./../css/footer.css">
+</head>
+<body>
+   <header class="position">
+      <h2 class="index">
+          <img src="./../icon/logoicon.jpeg" alt="" height="40px" width="40px">&nbsp; Achievers Hub
+      </h2>
+      <nav class="navigation">
+          <a href="./../index.html">Home</a>
+          <a href="./../pages/course.html">Course</a>
+          <a href="./../pages/login.html">Login</a>
+      </nav>
+  </header>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Python Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <div class="container">
+            <h1>Backend Python Blog</h1>
+   
+    <main class="container">
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Flask</a></li>
+                    <li><a href="#">Django</a></li>
+                    <li><a href="#">APIs</a></li>
+                    <li><a href="#">Database</a></li>
+                    <li><a href="#">Deployment</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h2>Archives</h2>
+                <ul>
+                    <li><a href="#">August 2024</a></li>
+                    <li><a href="#">July 2024</a></li>
+                    <li><a href="#">June 2024</a></li>
+                    <li><a href="#">May 2024</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a href="#">Introduction to Flask</a></li>
+                    <li><a href="#">Getting Started with Django</a></li>
+                    <li><a href="#">Building REST APIs with Python</a></li>
+                    <li><a href="#">Deploying Python Applications</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="content">
+            <article>
+                <div class="blog-box">
+                    <h2>Introduction to Flask</h2>
+                    <p>Flask is a micro web framework for Python based on Werkzeug and Jinja2. It's lightweight and easy to get started with, making it a great choice for small to medium web applications.</p>
+                    <p>Key features of Flask include:</p>
+                    <ul>
+                        <li><strong>Lightweight:</strong> Flask is a micro-framework, meaning it provides only the essentials, allowing developers to add extensions as needed.</li>
+                        <li><strong>Flexible:</strong> Flask doesn't impose any structure or dependencies, which allows for greater flexibility in how you design your application.</li>
+                        <li><strong>Easy to Learn:</strong> Flask's simplicity and minimalistic design make it accessible for beginners.</li>
+                    </ul>
+                    <p>To get started with Flask, you can install it using pip:</p>
+                    <pre><code>pip install Flask</code></pre>
+                    <p>Then, you can create a simple Flask application as follows:</p>
+                    <pre><code>from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    app.run(debug=True)</code></pre>
+                    <p>This will start a development server that you can use to test your application locally.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="blog-box">
+                    <h2>Getting Started with Django</h2>
+                    <p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It comes with a lot of built-in features that help you build complex web applications quickly.</p>
+                    <p>Key features of Django include:</p>
+                    <ul>
+                        <li><strong>Built-in Admin Interface:</strong> Django provides an automatic admin interface to manage your application's data.</li>
+                        <li><strong>ORM:</strong> Django includes an Object-Relational Mapper that allows you to interact with your database using Python objects.</li>
+                        <li><strong>Security:</strong> Django has built-in protection against many common security threats, such as SQL injection and cross-site scripting.</li>
+                    </ul>
+                    <p>To get started with Django, first install it using pip:</p>
+                    <pre><code>pip install Django</code></pre>
+                    <p>Next, create a new Django project with the following command:</p>
+                    <pre><code>django-admin startproject myproject</code></pre>
+                    <p>Navigate into your project directory and start the development server:</p>
+                    <pre><code>python manage.py runserver</code></pre>
+                    <p>This will start a server that you can use to develop your Django application.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="blog-box">
+                    <h2>Building REST APIs with Python</h2>
+                    <p>REST APIs are a popular way to expose application data and functionality over HTTP. In Python, you can build REST APIs using frameworks like Flask and Django.</p>
+                    <p>Here's a simple example of building a REST API using Flask:</p>
+                    <pre><code>from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+@app.route('/api/data')
+def get_data():
+    data = {'name': 'John', 'age': 30}
+    return jsonify(data)
+
+if __name__ == '__main__':
+    app.run(debug=True)</code></pre>
+                    <p>This example defines a single endpoint, `/api/data`, which returns a JSON response. You can use tools like Postman or cURL to test your API.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="blog-box">
+                    <h2>Deploying Python Applications</h2>
+                    <p>Deploying Python applications can be done in various ways, depending on the hosting environment. Common deployment options include cloud platforms, virtual private servers (VPS), and containerization technologies like Docker.</p>
+                    <p>Here are some popular deployment methods:</p>
+                    <ul>
+                        <li><strong>Cloud Platforms:</strong> Services like Heroku, AWS, and Google Cloud Platform provide managed environments for deploying Python applications.</li>
+                        <li><strong>Virtual Private Servers:</strong> With a VPS, you have more control over your environment. Tools like Gunicorn (for serving WSGI applications) and Nginx (as a reverse proxy) are commonly used.</li>
+                        <li><strong>Docker:</strong> Docker allows you to package your application and its dependencies into a container, ensuring consistency across different environments.</li>
+                    </ul>
+                    <p>For example, to deploy a Flask application using Docker, you would create a `Dockerfile` and build an image. Here’s a simple `Dockerfile`:</p>
+                    <pre><code>FROM python:3.8-slim
+
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD ["python", "app.py"]</code></pre>
+                    <p>After creating the Docker image, you can deploy it to a Docker-compatible environment.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+   
+</body>
+</html>
+
