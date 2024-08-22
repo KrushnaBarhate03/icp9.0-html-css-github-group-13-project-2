@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="./../css/read-8.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/nav.css">
+    <link rel="stylesheet" href="./../css/footer.css">
+</head>
+<body>
+   <header class="position">
+      <h2 class="index">
+          <img src="./../icon/logoicon.jpeg" alt="" height="40px" width="40px">&nbsp; Achievers Hub
+      </h2>
+      <nav class="navigation">
+          <a href="./../index.html">Home</a>
+          <a href="./../pages/course.html">Course</a>
+          <a href="./../pages/login.html">Login</a>
+      </nav>
+  </header>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <div class="container">
+            <h1>Java Blog</h1>
+    r>
+
+    <main class="container">
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Java Basics</a></li>
+                    <li><a href="#">OOP Concepts</a></li>
+                    <li><a href="#">Java Libraries</a></li>
+                    <li><a href="#">Advanced Topics</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h2>Archives</h2>
+                <ul>
+                    <li><a href="#">August 2024</a></li>
+                    <li><a href="#">July 2024</a></li>
+                    <li><a href="#">June 2024</a></li>
+                    <li><a href="#">May 2024</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a href="#">Getting Started with Java</a></li>
+                    <li><a href="#">Understanding OOP in Java</a></li>
+                    <li><a href="#">Exploring Java Libraries</a></li>
+                    <li><a href="#">Advanced Java Techniques</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="content">
+            <article>
+                <div class="blog-box">
+                    <h2>Getting Started with Java</h2>
+                    <p>Java is a versatile, high-level programming language used for building a variety of applications. It is known for its portability across platforms due to the Java Virtual Machine (JVM).</p>
+                    <p>To get started with Java, you'll need to set up a development environment. Here’s how you can install Java:</p>
+                    <ul>
+                        <li>Download the Java Development Kit (JDK) from the official <a href="https://www.oracle.com/java/technologies/javase-downloads.html">Oracle website</a>.</li>
+                        <li>Install the JDK on your system.</li>
+                        <li>Set up your environment variables (e.g., JAVA_HOME).</li>
+                        <li>Choose an Integrated Development Environment (IDE) such as Eclipse or IntelliJ IDEA.</li>
+                    </ul>
+                    <p>Here’s a simple "Hello, World!" program in Java:</p>
+                    <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+                    <p>This code defines a class named `HelloWorld` with a `main` method that prints "Hello, World!" to the console.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="blog-box">
+                    <h2>Understanding OOP in Java</h2>
+                    <p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects. Java is an object-oriented language, which means it supports OOP principles such as inheritance, encapsulation, and polymorphism.</p>
+                    <p>Here’s a brief overview of OOP concepts in Java:</p>
+                    <ul>
+                        <li><strong>Classes and Objects:</strong> Classes are blueprints for creating objects. An object is an instance of a class.</li>
+                        <li><strong>Inheritance:</strong> Inheritance allows a class to inherit fields and methods from another class.</li>
+                        <li><strong>Encapsulation:</strong> Encapsulation is the technique of bundling data and methods that operate on the data within a single unit, i.e., a class.</li>
+                        <li><strong>Polymorphism:</strong> Polymorphism allows objects of different classes to be treated as objects of a common superclass.</li>
+                    </ul>
+                    <p>Here’s an example of a simple class with inheritance:</p>
+                    <pre><code>class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.eat(); // Method from the parent class
+        myDog.bark(); // Method from the Dog class
+    }
+}</code></pre>
+                    <p>In this example, `Dog` inherits from `Animal` and has an additional method `bark`.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="blog-box">
+                    <h2>Exploring Java Libraries</h2>
+                    <p>Java has a rich ecosystem of libraries that can help simplify various tasks, from data manipulation to network communication. Some of the most commonly used Java libraries include:</p>
+                    <ul>
+                        <li><strong>Apache Commons:</strong> A set of reusable Java components, such as utility classes and file handling tools.</li>
+                        <li><strong>Google Guava:</strong> Provides core libraries that complement the Java standard library, including collections, caching, and concurrency utilities.</li>
+                        <li><strong>Jackson:</strong> A popular library for parsing and generating JSON.</li>
+                        <li><strong>JUnit:</strong> A widely used framework for writing and running unit tests in Java.</li>
+                    </ul>
+                    <p>Here’s an example of using Jackson to convert a Java object to JSON:</p>
+                    <pre><code>import com.fasterxml.jackson.databind.ObjectMapper;
+
+class Person {
+    public String name;
+    public int age;
+}
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        ObjectMapper mapper = new ObjectMapper();
+        Person person = new Person();
+        person.name = "John";
+        person.age = 30;
+
+        String jsonString = mapper.writeValueAsString(person);
+        System.out.println(jsonString);
+    }
+}</code></pre>
+                    <p>This code converts a `Person` object into a JSON string using the Jackson library.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="blog-box">
+                    <h2>Advanced Java Techniques</h2>
+                    <p>As you advance in Java programming, you'll encounter various techniques and best practices that can improve your code's efficiency and maintainability.</p>
+                    <p>Some advanced Java techniques include:</p>
+                    <ul>
+                        <li><strong>Concurrency:</strong> Java provides robust support for multithreading and concurrent programming through classes like `Thread`, `Runnable`, and the `java.util.concurrent` package.</li>
+                        <li><strong>Streams API:</strong> The Streams API allows for functional-style operations on collections of elements, such as filtering, mapping, and reducing.</li>
+                        <li><strong>Design Patterns:</strong> Familiarity with design patterns, such as Singleton, Factory, and Observer, can help you solve common design problems in a reusable way.</li>
+                        <li><strong>Lambda Expressions:</strong> Introduced in Java 8, lambda expressions provide a concise way to represent anonymous functions and implement functional interfaces.</li>
+                    </ul>
+                    <p>Here’s an example of using the Streams API to filter and collect data:</p>
+                    <pre><code>import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "David");
+
+        List<String> filteredNames = names.stream()
+                                          .filter(name -> name.startsWith("A"))
+                                          .collect(Collectors.toList());
+
+        System.out.println(filteredNames);
+    }
+}</code></pre>
+                    <p>This code filters a list of names to include only those starting with "A" using the Streams API.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+
+    </footer>
+</body>
+</html>
+

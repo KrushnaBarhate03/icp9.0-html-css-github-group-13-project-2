@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="./../css/read-7.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/nav.css">
+    <link rel="stylesheet" href="./../css/footer.css">
+</head>
+<body>
+   <header class="position">
+      <h2 class="index">
+          <img src="./../icon/logoicon.jpeg" alt="" height="40px" width="40px">&nbsp; Achievers Hub
+      </h2>
+      <nav class="navigation">
+          <a href="./../index.html">Home</a>
+          <a href="./../pages/course.html">Course</a>
+          <a href="./../pages/login.html">Login</a>
+      </nav>
+  </header>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="container">
+            <h1>Python Blog</h1>
+   
+
+    <main class="container">
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">Introduction to Python</a></li>
+                    <li><a href="#">Data Analysis</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h2>Archives</h2>
+                <ul>
+                    <li><a href="#">August 2024</a></li>
+                    <li><a href="#">July 2024</a></li>
+                    <li><a href="#">June 2024</a></li>
+                    <li><a href="#">May 2024</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h2>Recent Posts</h2>
+                <ul>
+                    <li><a href="#">Getting Started with Python</a></li>
+                    <li><a href="#">Python for Data Science</a></li>
+                    <li><a href="#">Building Web Apps with Flask</a></li>
+                    <li><a href="#">Introduction to Machine Learning with Python</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="content">
+            <article>
+                <div class="blog-box">
+                    <h2>Getting Started with Python</h2>
+                    <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It's widely used in various fields, including web development, data science, and automation.</p>
+                    <p>To get started with Python, you need to install it on your machine. You can download Python from the official website:</p>
+                    <a href="https://www.python.org/downloads/" class="btn">Download Python</a>
+                    <p>Once installed, you can write and execute Python scripts using the command line or an Integrated Development Environment (IDE) like PyCharm or VSCode.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="blog-box">
+                    <h2>Python for Data Science</h2>
+                    <p>Python is a popular choice for data science due to its rich ecosystem of libraries and frameworks. Libraries such as NumPy, pandas, and scikit-learn provide powerful tools for data manipulation and analysis.</p>
+                    <p>Here's a simple example of using pandas for data analysis:</p>
+                    <pre><code>import pandas as pd
+
+# Load data
+data = pd.read_csv('data.csv')
+
+# Display basic statistics
+print(data.describe())</code></pre>
+                    <p>This code snippet loads a CSV file into a pandas DataFrame and displays basic statistics about the data.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="blog-box">
+                    <h2>Building Web Apps with Flask</h2>
+                    <p>Flask is a lightweight web framework for Python. It is designed to be simple and easy to use, making it a great choice for small to medium web applications.</p>
+                    <p>To create a basic Flask application, follow these steps:</p>
+                    <pre><code>from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return 'Hello, Flask!'
+
+if __name__ == '__main__':
+    app.run(debug=True)</code></pre>
+                    <p>This example creates a basic Flask application that returns "Hello, Flask!" when you visit the home page.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="blog-box">
+                    <h2>Introduction to Machine Learning with Python</h2>
+                    <p>Machine Learning (ML) is a field of artificial intelligence that enables computers to learn from data and make predictions or decisions. Python has a rich set of libraries for ML, including scikit-learn, TensorFlow, and Keras.</p>
+                    <p>Here's an example of a simple machine learning model using scikit-learn:</p>
+                    <pre><code>from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+# Load dataset
+iris = load_iris()
+X, y = iris.data, iris.target
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Train model
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+
+# Make predictions
+predictions = model.predict(X_test)
+
+# Evaluate model
+print('Accuracy:', accuracy_score(y_test, predictions))</code></pre>
+                    <p>This code loads the Iris dataset, splits it into training and testing sets, trains a RandomForest classifier, and evaluates its accuracy.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+   
+</body>
+</html>
+
