@@ -1,0 +1,163 @@
+/* Reset some basic elements */
+body, h1, h2, p, ul, pre, code {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic layout and styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: #495057;
+    border-radius: 4px;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    margin-top: 60px; /* Space for fixed header */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    height: 900px;
+}
+
+.sidebar-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-box h2 {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-box ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-box ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.sidebar-box ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+.blog-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blog-box h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #007bff;
+}
+
+.blog-box p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.blog-box ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.blog-box ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
